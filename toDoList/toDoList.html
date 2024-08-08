@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="toDoList.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navDiv">
+            <div class="logoDiv"><p>Keshav <span>Singhania</span></p></div>
+            <div class="linksDiv">
+                <ul>
+                    <li><a href="https://www.youtube.com/@MrclasherFF">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/keshavks__">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/keshav-singhania-815943284/">LinkedIn</a></li>
+                    <button onclick="changeTheme()"><i class="fa-solid fa-palette">theme</i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="mainDiv">
+            <div class="headlineDiv">
+                <h2>To Do <span>list</span></h2>
+            </div>
+            <div class="inputDiv">
+                <input class="myValue" type="text" placeholder="Add Your Task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="taskDiv">
+                <ul class="tasks">
+                    <!-- <li><p><i class='bx bxs-check-circle'></i> task1</p><i class='bx bxs-trash'></i></li> -->
+            </div>
+        </div>
+    </main>
+    <script src="toDoList.js"></script>
+</body>
+</html>

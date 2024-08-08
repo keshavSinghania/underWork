@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#001005;
+    --text-color:white;
+    --main-color:#00ff51;
+}
+
+body{
+    background-color: var(--second-bg-color);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navDiv{
+    width: 100vw;
+    height: 7vh;
+    background-color:rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoDiv{
+    color: var(--text-color);
+    margin-left: 30px;
+}
+
+.logoDiv p:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.logoDiv span{
+    color: var(--main-color);
+}
+
+.linksDiv ul {
+    color: var(--text-color);
+    list-style: none;
+}
+
+.linksDiv ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding:5px;
+}
+.linksDiv ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 1px;
+}
+
+.linksDiv ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linksDiv ul button{
+    margin-right: 30px;
+    margin-left: 5px;
+    padding: 3px;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    border:none;
+    border-radius: 15%;
+}
+.linksDiv ul button:hover{
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+
+/* main box design begins */
+
+.mainDiv{
+    margin: auto;
+    margin-top: 50px;
+    width:30vw;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.mainDiv .headlineDiv h2{
+    color: var(--text-color);
+    font-size: 30px;
+    margin: 20px;
+}
+.mainDiv .headlineDiv h2 span{
+    color: var(--main-color);
+}
+.headlineDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.inputDiv input{
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.inputDiv input::placeholder{
+    color:var(--main-color)
+}
+.inputDiv button{
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    border-radius: 20px;
+    color:var(--bg-color);
+    background-color: var(--main-color);
+}
+.inputDiv button:hover{
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.taskDiv ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tasks li {
+    list-style: none;
+    background-color: var(--second-bg-color);
+    /* border:2px solid black; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-color);
+    margin: 10px;
+    /* margin-bottom: 15px; */
+    border-radius: 10px;
+    /* font-size:18px; */
+}
+
+.delCss{
+    text-decoration: line-through;
+}
+.tasks li i{
+    color: var(--main-color);
+    margin: 10px;
+    font-size: 20px;
+}
+
+.imgsize{
+    height: 10px;
+}
