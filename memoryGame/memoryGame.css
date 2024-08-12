@@ -1,0 +1,238 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#001005;
+    --text-color:white;
+    --main-color:#00ff51;
+}
+
+body{
+    background-color: var(--second-bg-color);
+}
+
+.navDiv{
+    width: calc(100vw - 20px);
+    height: 7vh;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px 0 10px;
+}
+
+.logoDiv p{
+    color: var(--text-color);
+}
+
+.logoDiv p:hover{
+    transform: scale(1.1);
+    transition: all 3s ease-in;
+}
+
+.logoDiv span{
+    color: var(--main-color);
+}
+
+.linksDiv ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.linksDiv ul{
+    list-style: none;
+    color:var(--text-color)
+}
+.linksDiv ul:hover{
+    color: var(--main-color);
+}
+.linksDiv ul a{
+    list-style: none;
+    color:var(--text-color);
+    text-decoration: none;
+}
+.linksDiv ul a:hover{
+    border-bottom: 2px solid var(--main-color);
+    transition: all 3 s ease-in;
+    color: var(--main-color);
+}
+main{
+   margin-top: 0.5%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   /* background-color: red; */
+}
+.scoresDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    /* background-color: red; */
+    width: 50vw;
+    height: 7vh;
+    margin: 10px;
+    padding: 10px;
+}
+.gameName{
+    color:var(--text-color);
+}
+.gameName span{
+    color:var(--main-color);
+}
+.guess{
+    color:var(--main-color);
+}
+.moves{
+    color:var(--text-color)
+}
+.guess:hover,
+.moves:hover
+{
+    transform: scale(1.1);
+    transition: all 3s ease-in;
+}
+.gameDiv{
+ background-color:var(--bg-color);
+ width: 40vw;
+ height: 79vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.myCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+}
+.myCards li{
+    border:2px solid var(--main-color);
+    width:17vh;
+    height: 17vh;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.myCards li:hover{
+    box-shadow: 0 0 10px var(--main-color);
+}
+.myCards li img{
+    position:absolute;
+    width:17vh;
+    height: 17vh;
+    /* display: none; */
+}
+.myCards li h2{
+    position:absolute;
+    color:var(--main-color)
+}
+.hideDiv{
+    z-index: 9;
+    width:17vh;
+    height: 17vh;
+    background-color: pink;
+}
+.won{
+    position: absolute;
+    background-color:var(--bg-color);
+    width: 40vw;
+   height: 79vh;
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+   flex-direction: column;
+   gap:20px;
+   display: none;
+}
+.wonMssg h2{
+    color:var(--text-color);
+    margin-top: 1;
+    margin-top: 50px;
+}
+.wonMssg h2 span{
+    color:var(--main-color);
+}
+.wonImg{
+    position:absolute;
+    margin-top: 50px;
+}
+.restart button{
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    border: var(--main-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position:absolute;
+}
+.restart button:hover{
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+/* responsive */
+
+@media (orientation:landscape){
+    .menuIcon1{
+        display: none;
+    }
+
+}
+
+@media (orientation:portrait){
+    .menuIcon1, .menuIcon{
+        color:var(--main-color);
+    }
+
+    .linksDiv ul{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .linksDiv ul li{
+         padding: 5px;
+    }
+
+    .linksDiv{
+        right:101%;
+        margin-top: 200px;
+        z-index: 9999;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        border-radius: 5px;
+        justify-content: flex-end;
+        padding: 10px;
+        position: absolute;
+    }
+    .myCards li{
+        width:13vh;
+        height: 13vh;
+    }
+    .myCards li img{
+        width:13vh;
+        height: 13vh;
+    }
+    .hideDiv{
+        width:13vh;
+        height: 13vh;
+    }
+    .gameDiv{
+        width: 100vw;
+        height: 70vh;
+    }
+    .won{
+        width: 100vw;
+        height: 70vh;
+    }
+    .scoresDiv h2{
+        font-size: 12px;
+    }
+}

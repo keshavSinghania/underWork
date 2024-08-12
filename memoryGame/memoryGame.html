@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Same Card</title>
+    <link href="memoryGame.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="navDiv">
+            <div class="logoDiv"><p>Keshav <span>Singhania</span></p></div>
+             <span onclick="showMenu()" class="menuIcon"><i class='bx bx-menu'></i></span>
+            <div class="linksDiv">
+                <!-- <span class="menuIcon"><i class='bx bx-menu'></i></span> -->
+                <ul>
+                    <li><a href="https://www.youtube.com/@MrclasherFF">Youtube</a></li>
+                    <li><a href="https://www.linkedin.com/in/keshav-singhania-815943284/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/keshavks__">Instagram</a></li>
+                    <li><a href="https://github.com/keshavSinghania">Github</a></li>
+                    <li onclick= "changeTheme()">Theme </li>
+                    <span class="menuIcon1" > <i class='bx bx-menu' onclick="hideMenu();"></i></span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="scoresDiv">
+            <div class="gameName"><h2>Guess The <span>Same Card</span></h2></div>
+            <div class="scores">
+                <div class="guess">Guessed: <span class="valueGuess">0</span></div>
+                <div class="moves">Moves: <span id="valueMoves">0</span></div>
+            </div>
+        </div>
+        <div class="gameDiv">
+            <ul class="myCards">
+
+            </ul>
+            <div class="won">
+                <div class="wonImg">
+                    <img src="won.gif" alt="">
+                </div>
+                <div class="wonMssg">
+                    <h2>Meow Meow <span>You Did It</span> Meow Meow</h2>
+                </div>
+                <div class="restart">
+                    <button onclick="refresh()">Restart Game</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </main>
+    <script src="memoryGame.js"></script>
+</body>
+</html>
